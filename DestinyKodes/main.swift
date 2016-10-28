@@ -18,6 +18,10 @@ var columnCValues: [Int] = [120, 100, -110, -90]
 var columnDValues: [Int] = [50, 35, -60, -40]
 var columnEValues: [Int] = [40, 10, -10, -20]
 
+//If you want to do a CSV format, show this statement first, then comment out all print statemetns below except the one for CSV
+
+print("\"Initial Starting Number\"",",","\"Column1\"",",","\"Column2\"",",","\"Column2\"",",","\"Column4\"",",","\"Column5\"",",","\"Answer\"")
+
 for numberColA in columnAvalues {
 //    print(initialStartingNumber,"+",numberColA,"=",(initialStartingNumber+numberColA))
 
@@ -33,12 +37,14 @@ for numberColA in columnAvalues {
                     
                     
                     //PRINT FULL PATH TO ANSWER
-                    print(initialStartingNumber,"+",numberColA,"+",numberColB,"+",numberColC,"+",numberColD,"+",numberColE,"=",(initialStartingNumber+numberColA+numberColB+numberColC+numberColD+numberColE))
+                    //print(initialStartingNumber,"+",numberColA,"+",numberColB,"+",numberColC,"+",numberColD,"+",numberColE,"=",(initialStartingNumber+numberColA+numberColB+numberColC+numberColD+numberColE))
                     
                     //PRINT JUST ANSWERS (USEFUL FOR DIFFING Hunter, Warlock and Titan values)
                     
 //                    print(initialStartingNumber+numberColA+numberColB+numberColC+numberColD+numberColE)
+                    //CSV Formatting
                     
+                         print(initialStartingNumber,",",numberColA,",",numberColB,",",numberColC,",",numberColD,",",numberColE,",",(initialStartingNumber+numberColA+numberColB+numberColC+numberColD+numberColE))
 
                 }
                 
